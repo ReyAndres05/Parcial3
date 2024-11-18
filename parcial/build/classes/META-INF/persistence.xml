@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence           http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="parcialPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>newpackage.Factura</class>
+    <class>newpackage.Aeropuertos</class>
+    <class>newpackage.CompaniaVuelos</class>
+    <class>newpackage.VuelosPasajeros</class>
+    <class>newpackage.Pasajeros</class>
+    <class>newpackage.Vuelos</class>
+    <class>newpackage.AeropuertosCompanias</class>
+    <class>newpackage.Prueba</class>
+    <class>newpackage.Companias</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://82.197.82.62:3306/u984447967_op2024b?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="u984447967_unipaz"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="estudiantesPoo2024B.*"/>
+    </properties>
+  </persistence-unit>
+</persistence>

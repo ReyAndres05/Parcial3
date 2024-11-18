@@ -1,0 +1,15 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class ConexionDB {
+    
+    private static final String URL = "jdbc:mysql://82.197.82.62:3306/u984447967_op2024b"; 
+    private static final String USER = "u984447967_unipaz";
+    private static final String PASSWORD = "estudiantesPoo2024B.*"; 
+
+    
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD); 
+    }
+}
